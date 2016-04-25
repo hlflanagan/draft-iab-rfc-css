@@ -4,11 +4,11 @@
 <!DOCTYPE rfc SYSTEM "rfc2629.dtd" [
 <!ENTITY RFC5741 SYSTEM "http://xml2rfc.ietf.org/public/rfc/bibxml/reference.RFC.5741.xml">
 <!ENTITY RFC7322 SYSTEM "http://xml2rfc.ietf.org/public/rfc/bibxml/reference.RFC.7322.xml">
-<!ENTITY I-D.hildebrand-html-rfc SYSTEM "http://xml2rfc.ietf.org/public/rfc/bibxml3/reference.I-D.hildebrand-html-rfc.xml">
-<!ENTITY I-D.flanagan-rfc-framework SYSTEM "http://xml2rfc.ietf.org/public/rfc/bibxml3/reference.I-D.flanagan-rfc-framework.xml">
+<!ENTITY I-D.iab-html-rfc SYSTEM "http://xml2rfc.ietf.org/public/rfc/bibxml3/reference.I-D.iab-html-rfc.xml">
+<!ENTITY I-D.iab-rfc-framework SYSTEM "http://xml2rfc.ietf.org/public/rfc/bibxml3/reference.I-D.iab-rfc-framework.xml">
 ]>
 
-<rfc ipr="trust200902" docName="draft-iab-rfc-css-00" category="info">
+<rfc ipr="trust200902" docName="draft-iab-rfc-css-01" category="info">
 
 <?rfc toc="yes"?>
 
@@ -23,7 +23,7 @@
       </address>
     </author>
 
-    <date year="2016" month="January" day="4"/>
+    <date year="2016" month="April" day="21"/>
     
     <area>General</area>
 
@@ -32,7 +32,7 @@
     <abstract>
 
 
-<t>The HTML format for RFCs, described in <xref target="I-D.hildebrand-html-rfc"/> assigns style guidance to an RFC Editor-defined Cascading Style Sheet (CSS).  The embedded, default CSS as included by the RFC Editor is expected to take into account accessibility needs and be built along a responsive design model.  This document describes the requirements for the default CSS used by the RFC Editor. The class names are based on the classes defined in draft-hildebrand-html-rfc. </t> 
+<t>The HTML format for RFCs, described in <xref target="I-D.iab-html-rfc"/> assigns style guidance to an RFC Editor-defined Cascading Style Sheet (CSS).  The embedded, default CSS as included by the RFC Editor is expected to take into account accessibility needs and be built along a responsive design model.  This document describes the requirements for the default CSS used by the RFC Editor. The class names are based on the classes defined in draft-iab-html-rfc. </t> 
 
 <t>Discussion of this draft takes place on the rfc-interest mailing list (rfc-interest@rfc-editor.org), which has its home page at https://www.rfc-editor.org/mailman/listinfo/rfc-interest.</t>
 
@@ -48,9 +48,9 @@
 
 <section anchor="introduction" title="Introduction">
 
-<t>The HTML format for RFCs, described in <xref target="I-D.hildebrand-html-rfc"/> assigns style guidance to an RFC Editor-defined Cascading Style Sheet (CSS).  This CSS will be embedded in the published HTML, and may be overridden by a locally defined CSS as desired.  The embedded, default CSS as included by the RFC Editor is expected to take into account accessibility needs and be built along a responsive design model.</t>
+<t>The HTML format for RFCs, described in <xref target="I-D.iab-html-rfc"/> assigns style guidance to an RFC Editor-defined Cascading Style Sheet (CSS).  This CSS will be embedded in the published HTML, and may be overridden by a locally defined CSS as desired.  The embedded, default CSS as included by the RFC Editor is expected to take into account accessibility needs and be built along a responsive design model.</t>
 
-<t>This document describes the requirements for the default CSS used by the RFC Editor. Unless called out otherwise, any styling provided for these classes must not alter the natural language content in any visible way.  Many of these classes are provided to mark the elements semantically: elements using them should simply inherit their surrounding styling. Exceptions are called out below. A class is identified for Internet Drafts, such that certain features found only in I-Ds may be made distinct in some fashion within those drafts.  The requirements will only be applied to HTML documents published by the RFC Editor as per <xref target="I-D.flanagan-rfc-framework"/>.</t>
+<t>This document describes the requirements for the default CSS used by the RFC Editor. Unless called out otherwise, any styling provided for these classes must not alter the natural language content in any visible way.  Many of these classes are provided to mark the elements semantically: elements using them should simply inherit their surrounding styling. Exceptions are called out below. A class is identified for Internet Drafts, such that certain features found only in I-Ds may be made distinct in some fashion within those drafts.  The requirements will only be applied to HTML documents published by the RFC Editor as per <xref target="I-D.iab-rfc-framework"/>.</t>
 
 <t>The details described in this document are expected to change based on experience gained in implementing the RFC production center's toolset. Revised documents will be published capturing those changes as the toolset is completed. Other implementers must not expect those changes to remain backwards-compatible with the details described in this document.</t>
 
@@ -63,7 +63,7 @@
 <section anchor="general-requirements" title="General Requirements">
 
 <t><list style='symbols'>
-  <t>Support the display of the semantic HTML described in <xref target="I-D.hildebrand-html-rfc"/>.</t>
+  <t>Support the display of the semantic HTML described in <xref target="I-D.iab-html-rfc"/>.</t>
   <t>Follow best practice for accessibility, as defined by the W3C's "Best Practices for Authoring HTML" <xref target="HTMLBP"/>.</t>
   <t>Follow best practice for mobile devices, as defined by the W3C's "Best Practices for Authoring HTML."</t>
   <t>Allow for a broad range of internationalized scripts.</t>
@@ -219,7 +219,7 @@
   </section>
 
   <section anchor="pilcrow" title=".pilcrow">
-    <t>Pilcrows, when used as described in draft-hildebrand-html-rfc, should 
+    <t>Pilcrows, when used as described in draft-iab-html-rfc, should 
        appear at the end of the paragraph, artwork, or sourcecode segment. 
        They should not appear until moused-over. They should not show when 
        printed, and should not be selected when copied with a copy/paste 
@@ -287,6 +287,13 @@
 
 <section anchor="change-log" title="Draft Change Log">
 <t>To be removed before publication</t>
+<section anchor="draft-iab-rfc-css-01" title="Changes from draft-iab-rfc-css-00 to -01">
+<t>added .refInstance and .ulEmpty; removed .referenceGroup, as per HTML draft
+</t>
+</section>
+<section anchor="change-to-iab" title="Changes from draft-flanagan-rfc-css to draft-iab-rfc-css">
+<t>revised draft name; no major changes</t>
+</section>
 <section anchor="change-03" title="Changes from -02 to -03">
 <t>Moved Appendix to correct location; fixed typos; moved lang-* to Appendix,</t>
 </section>
@@ -323,8 +330,8 @@
 </reference>
 &RFC5741;
 &RFC7322;
-&I-D.hildebrand-html-rfc;
-&I-D.flanagan-rfc-framework;
+&I-D.iab-html-rfc;
+&I-D.iab-rfc-framework;
 
 
     </references>
@@ -394,12 +401,11 @@ natural language content of a document.</t>
 <t>.pilcrow</t>
 <t>.postal-code</t>
 <t>.published</t>
-<t>.refAuthor</t>
 <t>.refContent</t>
 <t>.refDate</t>
+<t>.refInstance</t>
 <t>.refTitle</t>
 <t>.reference</t>
-<t>.referenceGroup</t>
 <t>.region</t>
 <t>.relref</t>
 <t>.rendered</t>
@@ -422,6 +428,7 @@ natural language content of a document.</t>
 <t>.toc</t>
 <t>.type</t>
 <t>.ulCompact</t>
+<t>.ulEmpty</t>
 <t>.url</t>
 <t>.workgroup</t>
 <t>.xref</t>
