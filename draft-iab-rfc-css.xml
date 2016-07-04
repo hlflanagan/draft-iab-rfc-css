@@ -23,7 +23,7 @@
       </address>
     </author>
 
-    <date year="2016" month="April" day="21"/>
+    <date year="2016" month="July" day="4"/>
     
     <area>General</area>
 
@@ -139,15 +139,6 @@
     </section>
   </section>
 
-  <section anchor="closeParen" title=".closeParen">
-    <t>Close the whitespace before a closing parenthesis after a &lt;span&gt; block by moving the text within the block to the right and moving the closing parenthesis to the left..</t>
-  </section>
-
-  <section anchor="comma" title=".comma">
-    <t>Close the whitespace before a comma after a &lt;span&gt; block 
-       by moving the text within the block to the left and moving the 
-       comma to the right.</t>
-  </section>
 
   <section anchor="cref" title=".cref">
     <t>A comment within an I-D; should be visually distinct.</t>
@@ -188,12 +179,6 @@
     <t>Hide from visible content.</t>
   </section>
 
-  <section anchor="fullStop" title=".fullStop">
-    <t>Close the whitespace before a period or full stop after 
-       a &lt;span&gt; block by moving the text within the block to the left
-       and moving the period to the right.</t>
-  </section>
-
   <section anchor="note" title=".note"> 
     <t>Notes should be emphasized and distinct from normal paragraph text.
     </t>
@@ -210,12 +195,6 @@
     <t>If the style attribute from the source XML contains a percent sign, 
        a particular style setting will be required to make this setting 
        behave like an HTML ordered list.</t>
-  </section>
-
-  <section anchor="openParen" title=".openParen">
-    <t>Close the whitespace after an opening parenthesis and before a 
-       &lt;span&gt; block by moving the text within the block to the left 
-       and moving the opening parenthesis to the right.</t>
   </section>
 
   <section anchor="pilcrow" title=".pilcrow">
@@ -288,8 +267,8 @@
 <section anchor="change-log" title="Draft Change Log">
 <t>To be removed before publication</t>
 <section anchor="draft-iab-rfc-css-01" title="Changes from draft-iab-rfc-css-00 to -01">
-<t>added .refInstance and .ulEmpty; removed .referenceGroup, as per HTML draft
-</t>
+<t>added .refInstance, .ulEmpty, .ears, .left, .right, .center as per HTML draft</t>
+<t>removed .comma, .closeParen, .openParen, .fullStop, .referenceGroup as per HTML draft</t>
 </section>
 <section anchor="change-to-iab" title="Changes from draft-flanagan-rfc-css to draft-iab-rfc-css">
 <t>revised draft name; no major changes</t>
@@ -299,7 +278,7 @@
 </section>
 <section anchor="change-02" title="Changes from -01 to -02">
 <t>Adjusted class names where possible to a common naming pattern (CamelCase).</t>
-<t>Added alignCenter, alignRight, dlHanging, closedParen, openParen, ulEmpty</t>
+<t>Added alignCenter, alignRight, dlHanging, ulEmpty</t>
 </section>
 <section anchor="change-01" title="Changes from -00 to -01">
 <t>Moved full list of classes to Appendix; only discussed classes that will have visible changes to the text in the body</t>
@@ -357,9 +336,8 @@ natural language content of a document.</t>
 <t>.author</t>
 <t>.authors</t>
 <t>.bcp14</t>
+<t>.center</t>
 <t>.city</t>
-<t>.closeParen</t>
-<t>.comma</t>
 <t>.compact</t>
 <t>.country-name</t>
 <t>.cref</t>
@@ -369,11 +347,11 @@ natural language content of a document.</t>
 <t>.dlHanging</t>
 <t>.dlParallel</t>
 <t>.docInfo</t>
+<t>.ears</t>
 <t>.email</t>
 <t>.eref</t>
 <t>.finalized</t>
 <t>.fn</t>
-<t>.fullStop</t>
 <t>.index</t>
 <t>.indexChar</t>
 <t>.indexIndex</t>
@@ -386,6 +364,7 @@ natural language content of a document.</t>
 <t>.irefRefs</t>
 <t>.irefSubItem</t>
 <t>.label</t>
+<t>.left</t>
 <t>.locality</t>
 <t>.nameRole</t>
 <t>.note
@@ -395,7 +374,6 @@ natural language content of a document.</t>
 </t>
 <t>.olCompact</t>
 <t>.olPercent</t>
-<t>.openParen</t>
 <t>.org</t>
 <t>.organization</t>
 <t>.pilcrow</t>
@@ -411,6 +389,7 @@ natural language content of a document.</t>
 <t>.rendered</t>
 <t>.RFC</t>
 <t>.rfcEditorRemove</t>
+<t>.right</t>
 <t>.role</t>
 <t>.selfRef</t>
 <t>.series</t>
